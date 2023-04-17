@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val homeFragment = HomeFragment()
-        val notivicationFragment = NotificationFragment()
+        val notificationFragment = NotificationFragment()
         val settingsFragment = SettingsFragment()
 
         makeCurrentFragment (homeFragment)
@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         bottom_navigation.setOnNavigationItemReselectedListener {
             when(it.itemId){
                 R.id.menu_home -> makeCurrentFragment(homeFragment)
-                R.id.menu_notification -> makeCurrentFragment(notivicationFragment)
+                R.id.menu_notification -> makeCurrentFragment(notificationFragment)
                 R.id.menu_settings -> makeCurrentFragment(settingsFragment)
             }
             true
