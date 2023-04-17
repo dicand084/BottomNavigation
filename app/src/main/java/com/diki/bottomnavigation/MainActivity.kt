@@ -8,7 +8,7 @@ import com.diki.bottomnavigation.fragment.NotificationFragment
 import com.diki.bottomnavigation.fragment.SettingsFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-@Suppress("DEPRECATION")
+@Suppress("DEPRECATION", "UNUSED_EXPRESSION")
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
